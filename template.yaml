@@ -190,7 +190,7 @@ Outputs:
     Description: Configuration Path
     Value: !Sub '/applications/${AppConfigAppName}/environments/${AppConfigAppEnvironmentName}/configurations/${AppConfigName}'
   HttpApiUrl:
-    Description: URL of your API endpoint
+    Description: URL of your API endpoint add "config" at the end
     Value:
       Fn::Sub: 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/'
   HttpApiId:

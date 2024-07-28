@@ -5,4 +5,36 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="syncSettings">
+    <option name="samConfigs">
+      <map>
+        <entry key="template.yaml">
+          <value>
+            <SyncSamConfig>
+              <option name="bucketName" value="pbkn-poc-bucket" />
+              <option name="enabledCapabilities">
+                <list>
+                  <option value="NAMED_IAM" />
+                  <option value="AUTO_EXPAND" />
+                  <option value="IAM" />
+                </list>
+              </option>
+              <option name="stackName" value="aws-sam-appconfig-demo" />
+              <option name="tags">
+                <map />
+              </option>
+              <option name="tempParameterOverrides">
+                <map>
+                  <entry key="AppConfigAppEnvironmentName" value="dev" />
+                  <entry key="AppConfigAppName" value="appconfig-feature-flag-sam" />
+                  <entry key="AppConfigLayerArn" value="arn:aws:lambda:ap-south-1:554480029851:layer:AWS-AppConfig-Extension:139" />
+                  <entry key="AppConfigName" value="TestConfig" />
+                </map>
+              </option>
+            </SyncSamConfig>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </module>
